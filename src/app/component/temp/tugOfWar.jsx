@@ -26,7 +26,9 @@ export default function TugOfWar() {
     }
 
     // const ws = new WebSocket(`${awsEndpoint}/click`);
-    const ws = new WebSocket("wss://frkuuy5sbh.execute-api.ap-southeast-2.amazonaws.com/dev");
+    // const ws = new WebSocket("wss://frkuuy5sbh.execute-api.ap-southeast-2.amazonaws.com/dev");
+    const ws = new WebSocket("wss://frkuuy5sbh.execute-api.ap-southeast-2.amazonaws.com/click");
+
 
     wsRef.current = ws;
 
