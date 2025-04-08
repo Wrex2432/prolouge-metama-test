@@ -25,7 +25,9 @@ export default function TugOfWar() {
       return;
     }
 
-    const ws = new WebSocket(`${awsEndpoint}/click`);
+    // const ws = new WebSocket(`${awsEndpoint}/click`);
+    const ws = new WebSocket("wss://your-api-id.execute-api.ap-southeast-2.amazonaws.com/dev");
+
     wsRef.current = ws;
 
     ws.onopen = () => {
